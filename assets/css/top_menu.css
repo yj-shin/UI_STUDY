@@ -1,0 +1,101 @@
+/* top_menu.css */
+
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #12192c;
+  --accent-color: orange;
+  --icons-color: rgb(152, 187, 201);
+  --bodybackground-color: rgb(255, 255, 255);
+}
+
+body { 
+  margin: 0;
+  background-color: var(--bodybackground-color);
+  font-family: 'STIX Two Math';
+  /* Top Menu 짤림 현상 padding으로 해결 */
+  padding-top: 45px;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 8px 12px;
+  font-family: 'STIX Two Math';
+  position: fixed;
+  /* width: 100% */
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar__logo i {
+  color: var(--accent-color);
+  padding-left: 0;
+}
+
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.navbar__menu li {
+  padding: 8px 30px;
+}
+
+
+
+.navbar__menu li:hover {
+  background-color: var(--accent-color);
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+@font-face {
+  font-family: 'Cafe24Oneprettynight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  font: normal 1rem/1.5rem 'Cafe24Oneprettynight', serif;
+  background: url('https://images.unsplash.com/photo-1505312926838-645f295a20e1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1234&q=80')no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  padding: 50px;
+  background: rgba(0, 0, 0, .4);
+}
+p {
+  color: #aaa;
+  margin-bottom: 10px;
+}
+p:hover {
+  color: #fff
+}
+
+p:hover {
+  width: 100%;
+  transition: width .3s;
+}
